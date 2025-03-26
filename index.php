@@ -45,7 +45,7 @@ if (!isset($_POST['agreement'])) {
 if ($errors) exit();
 
 try {
-    $db = new PDO('mysql:host=localhost;dbname=dbname', 'login', 'pass', [
+    $db = new PDO('mysql:host=localhost;dbname=u68654', 'u68654', '1979564', [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
     $stmt = $db->prepare("INSERT INTO applications (fio, phone, email, birth_date, gender, bio, agreement) VALUES (?, ?, ?, ?, ?, ?, ?)");
